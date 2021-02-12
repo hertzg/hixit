@@ -209,6 +209,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^14.14.27":
+  version: 14.14.27
+  resolution: "@types/node@npm:14.14.27"
+  checksum: efc78cf6e698e09925a2542bbea932dfe092408f4ce39b8f260b71df502221d76c925fd3227bc1f7427edd9cfb6f8c81c68a56b9ab690f08425e7e6e177e61e0
+  languageName: node
+  linkType: hard
+
+"@types/prop-types@npm:*":
+  version: 15.7.3
+  resolution: "@types/prop-types@npm:15.7.3"
+  checksum: bd0eab69d5120ad3784d0c9985f902653d5924707a7f2b3702a330e762dfd61b6494954cb54ad0c52b918ffd6f1e7e27c9270e4442bc15250de348596f2f60cb
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "@types/react@npm:17.0.1"
+  dependencies:
+    "@types/prop-types": "*"
+    csstype: ^3.0.2
+  checksum: 5b490728c5210ea20b20377dd8c69b12ba7283058788d431d8b35ff4d18d03aa3a0f0cc6fe83691c8b9707d3e7ee8e9aae4e50d3989e094c907030d045d0e4e2
+  languageName: node
+  linkType: hard
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -964,6 +988,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:^3.0.2":
+  version: 3.0.6
+  resolution: "csstype@npm:3.0.6"
+  checksum: ebdca96d26e1af5604658e6876af29ac1e218750efb587684f2b2b13bb062a397b351586d285f911e6985e03112e56c2aee127d35ae7354cc7d25f3000e22556
+  languageName: node
+  linkType: hard
+
 "dashdash@npm:^1.12.0":
   version: 1.14.1
   resolution: "dashdash@npm:1.14.1"
@@ -1531,9 +1562,12 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "hexit@workspace:."
   dependencies:
+    "@types/node": ^14.14.27
+    "@types/react": ^17.0.1
     next: 10.0.6
     react: 17.0.1
     react-dom: 17.0.1
+    typescript: ^4.1.5
   languageName: unknown
   linkType: soft
 
@@ -3310,6 +3344,26 @@ fsevents@~2.3.1:
   version: 0.7.1
   resolution: "type-fest@npm:0.7.1"
   checksum: 13aa0b28ad4e3464eb62c33e7fe5165b41305abab68222507a6f728be9fc43da2aa61d25f5422296137f7751dbd4a71d6dbd7c7030dc1d897769ef09e8c1588c
+  languageName: node
+  linkType: hard
+
+typescript@^4.1.5:
+  version: 4.1.5
+  resolution: "typescript@npm:4.1.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 29157c84426ac94ce97aac836264f303a26bd9fb30865650229e3406a36ca2e89735ef4b8878075ba1b95fa4d3ff9810057b64888700c28e20b4034a6db4da83
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.1.5#builtin<compat/typescript>":
+  version: 4.1.5
+  resolution: "typescript@patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 58cc7786be0f8485c124944883b1384287532e4867ec37f1fb5cb2811dbc10f7a9decccad89097f924043285f3515bfd8223c61dbb4f88af00b2d8dc2ef73207
   languageName: node
   linkType: hard
 
